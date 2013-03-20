@@ -1,0 +1,16 @@
+<startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+    </startup><startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+    </startup>
+
+<startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+    </startup>
+
+
+Error	1	The name 'ConfigurationManager' does not exist in the current context	C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryTweet\TryTweet\Program.cs	75	14	TryTweet
+
+Error	1	The type or namespace name 'OAuthToken' could not be found (are you missing a using directive or an assembly reference?)	C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryTweet\TryTweet\Program.cs	24	1	TryTweet
+
+Error	2	'TweetSharp.TwitterService' does not contain a definition for 'GetAuthorizationUrl' and no extension method 'GetAuthorizationUrl' accepting a first argument of type 'TweetSharp.TwitterService' could be found (are you missing a using directive or an assembly reference?)	C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryTweet\TryTweet\Program.cs	26	33	TryTweet

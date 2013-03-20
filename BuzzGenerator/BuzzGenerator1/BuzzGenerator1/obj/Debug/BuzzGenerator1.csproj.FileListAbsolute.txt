@@ -1,0 +1,17 @@
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\bin\Debug\BuzzGenerator1.exe.config
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\obj\Debug\BuzzGenerator1.csprojResolveAssemblyReference.cache
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\obj\Debug\BuzzGenerator1.BuzzGeneratorForm.resources
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\obj\Debug\BuzzGenerator1.Properties.Resources.resources
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\obj\Debug\BuzzGenerator1.csproj.GenerateResource.Cache
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\bin\Debug\BuzzGenerator1.exe
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\bin\Debug\BuzzGenerator1.pdb
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\obj\Debug\BuzzGenerator1.exe
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\obj\Debug\BuzzGenerator1.pdb
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\bin\Debug\Hammock.ClientProfile.dll
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\bin\Debug\Hammock.dll
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\bin\Debug\TweetSharp.dll
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\bin\Debug\Hammock.pdb
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\bin\Debug\Hammock.ClientProfile.pdb
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\BuzzGenerator\BuzzGenerator1\BuzzGenerator1\bin\Debug\TweetSharp.pdb

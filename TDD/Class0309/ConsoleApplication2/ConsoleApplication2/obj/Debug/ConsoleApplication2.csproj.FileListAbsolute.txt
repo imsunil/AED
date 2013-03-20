@@ -1,0 +1,14 @@
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\Class0309\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\Class0309\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.csprojResolveAssemblyReference.cache
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\Class0309\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\Class0309\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\Class0309\ConsoleApplication2\ConsoleApplication2\bin\Debug\Hammock.ClientProfile.dll
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\Class0309\ConsoleApplication2\ConsoleApplication2\bin\Debug\Hammock.dll
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\Class0309\ConsoleApplication2\ConsoleApplication2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\Class0309\ConsoleApplication2\ConsoleApplication2\bin\Debug\TweetSharp.dll
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\Class0309\ConsoleApplication2\ConsoleApplication2\bin\Debug\Hammock.pdb
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\Class0309\ConsoleApplication2\ConsoleApplication2\bin\Debug\Hammock.ClientProfile.pdb
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\Class0309\ConsoleApplication2\ConsoleApplication2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\Class0309\ConsoleApplication2\ConsoleApplication2\bin\Debug\TweetSharp.pdb
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\Class0309\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\Class0309\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb

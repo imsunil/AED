@@ -1,0 +1,2 @@
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryTweet\TryTweet\bin\Debug\TryTweet.exe.config
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryTweet\TryTweet\obj\Debug\TryTweet.csprojResolveAssemblyReference.cache

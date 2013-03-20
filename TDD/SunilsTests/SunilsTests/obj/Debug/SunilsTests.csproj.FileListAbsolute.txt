@@ -1,0 +1,9 @@
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\SunilsTests\SunilsTests\obj\Debug\SunilsTests.csprojResolveAssemblyReference.cache
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\SunilsTests\SunilsTests\bin\Debug\SunilsTests.dll
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\SunilsTests\SunilsTests\bin\Debug\SunilsTests.pdb
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\SunilsTests\SunilsTests\bin\Debug\xunit.dll
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\SunilsTests\SunilsTests\bin\Debug\xunit.extensions.dll
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\SunilsTests\SunilsTests\bin\Debug\xunit.xml
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\SunilsTests\SunilsTests\bin\Debug\xunit.extensions.xml
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\SunilsTests\SunilsTests\obj\Debug\SunilsTests.dll
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\SunilsTests\SunilsTests\obj\Debug\SunilsTests.pdb

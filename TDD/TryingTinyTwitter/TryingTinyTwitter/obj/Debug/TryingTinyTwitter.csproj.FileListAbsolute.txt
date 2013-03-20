@@ -1,0 +1,14 @@
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryingTinyTwitter\TryingTinyTwitter\bin\Debug\TryingTinyTwitter.exe.config
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryingTinyTwitter\TryingTinyTwitter\bin\Debug\TryingTinyTwitter.exe
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryingTinyTwitter\TryingTinyTwitter\bin\Debug\TryingTinyTwitter.pdb
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryingTinyTwitter\TryingTinyTwitter\obj\Debug\TryingTinyTwitter.csprojResolveAssemblyReference.cache
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryingTinyTwitter\TryingTinyTwitter\obj\Debug\TryingTinyTwitter.exe
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryingTinyTwitter\TryingTinyTwitter\obj\Debug\TryingTinyTwitter.pdb
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryingTinyTwitter\TryingTinyTwitter\bin\Debug\Hammock.ClientProfile.dll
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryingTinyTwitter\TryingTinyTwitter\bin\Debug\Hammock.dll
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryingTinyTwitter\TryingTinyTwitter\bin\Debug\Newtonsoft.Json.dll
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryingTinyTwitter\TryingTinyTwitter\bin\Debug\TweetSharp.dll
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryingTinyTwitter\TryingTinyTwitter\bin\Debug\Hammock.pdb
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryingTinyTwitter\TryingTinyTwitter\bin\Debug\Hammock.ClientProfile.pdb
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryingTinyTwitter\TryingTinyTwitter\bin\Debug\Newtonsoft.Json.xml
+C:\Users\v-supitk\Documents\GitHub\DeCoder\AED\TDD\TryingTinyTwitter\TryingTinyTwitter\bin\Debug\TweetSharp.pdb
