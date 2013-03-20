@@ -20,10 +20,15 @@ namespace BuzzGenerator1
         public BuzzGeneratorForm()
         {
             InitializeComponent();
-            //TDashboardRefreshTimer = new Timer();
-            //DashboardRefreshTimer.Interval = 5000;
-            //DashboardRefreshTimer.Tick += new EventHandler(DashboardRefreshTimer_Tick);
-            //DashboardRefreshTimer.Start();
+            InitializeDashboardTimer();
+        }
+
+        private void InitializeDashboardTimer()
+        {
+            DashboardRefreshTimer = new Timer();
+            DashboardRefreshTimer.Interval = 30000;
+            DashboardRefreshTimer.Tick += new EventHandler(DashboardRefreshTimer_Tick);
+            DashboardRefreshTimer.Start();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -39,13 +44,8 @@ namespace BuzzGenerator1
                 MessageBox.Show("Please enter some text to tweet");
             else
             {
-                MessageBox.Show(TweetTextBox.Text);
                 mytwitter.SendTweet(TweetTextBox.Text);
                 TweetTextBox.Text = "";
-                //Change Lable to "Since Last Tweet"
-                //Display counters to 0
-
-
             }
             
             
@@ -63,13 +63,9 @@ namespace BuzzGenerator1
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            //Disable all configuration checkboxes and buttons
-            //Clear and Enable tweet textbox and button
             DisableAll();
             Enable(TweetTextBox, TweetButton);
             Display();
-
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -115,6 +111,8 @@ namespace BuzzGenerator1
             if (sender == DashboardRefreshTimer)
             {
                // label1.Text = DateTime.Now.ToLongTimeString();
+                mytwitter.UpdateCounters();
+                Display();
             }
 
         }
@@ -142,21 +140,18 @@ namespace BuzzGenerator1
             SelectFileButton.Enabled = false;
             FolderTextBox.Text = "";
             FolderTextBox.ReadOnly = true;
-            PicturesFolderButton.Enabled = false;
-                   
+            PicturesFolderButton.Enabled = false;       
         }
 
         private void InitializeCounters()
         {
-            mytwitter.SetInitialCounters();
-
+            mytwitter.InitializeMetrics();
         }
 
         private void Enable(TextBox ATextBox,Button AButton)
         {
             ATextBox.ReadOnly = false;
             AButton.Enabled = true;
-
         }
 
         private void Display()
@@ -164,7 +159,6 @@ namespace BuzzGenerator1
             RetweetTextBox.Text = mytwitter.Retweets.ToString();
             MentionsTextBox.Text = mytwitter.Mentions.ToString();
             FollowRequestTextBox.Text = mytwitter.FollowRequests.ToString();
-
         }
     }
 }

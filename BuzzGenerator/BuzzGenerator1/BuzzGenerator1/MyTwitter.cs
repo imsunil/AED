@@ -34,56 +34,57 @@ namespace BuzzGenerator1
             service.AuthenticateWith(accessToken, accessTokenSecret);
             //var service = new TwitterService("tedRo766zL7mr7TKZkOugA", "WREOp5SZ71EtLCt3T4RboUv1IrkUpPkCpcBxkAGk8");
             //service.AuthenticateWith("21985278-dud1wSertHCQYTUK5ta5AA0ciqWB31ZsT8Dt8DJg", "yPDp2TTOOhQj6XDxX7P5TxmNtHZcQ6sJumth8DVzRk");
-            InitializeMetrics();
-
         }
 
-        private void InitializeMetrics()
+        public void InitializeMetrics()
         {
-            //lastTweetID = GetLastTweetID();
-            GetRetweetsSinceLastTweet();
-            GetMentionsSinceLastTweet();
-
+            //lastTweetID = GetLastTweetID(); Disabled to avoid dynamically setting it
+            Retweets=initialRetweets=GetRetweetsSinceLastTweet();
+            Mentions=initialMentions = GetMentionsSinceLastTweet();
+            FollowRequests = initialFollowRequests = GetFollowRequests();
         }
 
-        private void GetMentionsSinceLastTweet()
+
+
+        private int GetFollowRequests()
+        {
+            int followers=0;
+            var followerLists = service.GetIncomingFriendRequests(new GetIncomingFriendRequestsOptions());
+            foreach (var follower in followerLists)
+            {
+                followers = followers + 1;
+            }
+            return  followers;
+        }
+
+        private int GetMentionsSinceLastTweet()
         {
             ListTweetsMentioningMeOptions myMentionOptions = new ListTweetsMentioningMeOptions();
-            //myRetweetOptions.SinceId = lastTweetID;
-            //myRetweetOptions.Count = 100;
             myMentionOptions.Count = 200;
-
-
+            myMentionOptions.SinceId = lastTweetID;
+            int mentions = 0;
             var tweets = service.ListTweetsMentioningMe(myMentionOptions);
-
-
             foreach (var tweet in tweets)
             {
-                initialMentions = initialMentions + 1;
-
+                mentions = mentions + 1;
             }
-            MessageBox.Show(initialMentions.ToString());
-            
+            return mentions;
         }
 
-        private void GetRetweetsSinceLastTweet()
+        private int GetRetweetsSinceLastTweet()
         {
 
             ListRetweetsOfMyTweetsOptions myRetweetOptions = new ListRetweetsOfMyTweetsOptions();
-            //myRetweetOptions.SinceId = lastTweetID;
+            myRetweetOptions.SinceId = lastTweetID;
             myRetweetOptions.Count = 100;
-
             var tweets = service.ListRetweetsOfMyTweets(myRetweetOptions);
-
-
+            int retweets = 0;
             foreach (var tweet in tweets)
             {
-                initialRetweets = initialRetweets + 1;
+                retweets = retweets + 1;
                 initialTotalRetweets = initialTotalRetweets + tweet.RetweetCount;
             }
-            //MessageBox.Show( initialRetweets.ToString());
-            //MessageBox.Show( initialTotalRetweets.ToString());
-            
+            return retweets;
         }
 
         private long GetLastTweetID()
@@ -96,30 +97,30 @@ namespace BuzzGenerator1
             {
                 lastTweetId = tweet.Id;
             }
-            //MessageBox.Show(lastTweetId.ToString());
             return lastTweetId;
         }
 
-        //service.AuthenticateWith(accessToken, accessTokenSecret);
 
         public void SetInitialCounters()
         {
-            FollowRequests = 0;
-            Mentions = 0;
-            Retweets = 0;
+            FollowRequests = initialFollowRequests;
+            Mentions = initialMentions;
+            Retweets = initialRetweets;
         }
 
         public void SendTweet(String status)
         { 
         var tweetoptions = new SendTweetOptions();
         tweetoptions.Status = status;
-
-        MessageBox.Show(status);
-
         service.SendTweet(tweetoptions);
-        //service.SendTweet(tweetoptions);
-        
         }
 
+
+        public void UpdateCounters()
+        {
+            Retweets = GetRetweetsSinceLastTweet();
+            FollowRequests = GetFollowRequests();
+            Mentions = GetMentionsSinceLastTweet();
+        }
     }
 }
