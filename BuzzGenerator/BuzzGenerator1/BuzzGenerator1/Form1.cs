@@ -20,7 +20,7 @@ namespace BuzzGenerator1
         public BuzzGeneratorForm()
         {
             InitializeComponent();
-            InitializeDashboardTimer();
+            //InitializeDashboardTimer();
         }
 
         private void InitializeDashboardTimer()
@@ -34,8 +34,29 @@ namespace BuzzGenerator1
         private void Form1_Load(object sender, EventArgs e)
         {
             DisableAll();
-            InitializeCounters();
+            //InitializeCounters();
+            InitializeTweetIntervalCombobox();
             Display();
+        }
+
+        private void InitializeTweetIntervalCombobox()
+        {
+            //throw new NotImplementedException();
+
+
+            {
+                var TweetIntervalDataTable = new DataTable();
+                TweetIntervalDataTable.TableName = "Interval";
+                TweetIntervalDataTable.Columns.Add("Minutes");
+                TweetIntervalDataTable.Columns.Add("Miliseconds");
+                for (int i = 1; i <= 15; i++)
+                {
+                    TweetIntervalDataTable.Rows.Add(i.ToString(), (i * 60000).ToString());
+                }
+                TweetIntervalcomboBox.DataSource=TweetIntervalDataTable;
+                TweetIntervalcomboBox.DisplayMember="Minutes";
+                TweetIntervalcomboBox.ValueMember="Miliseconds";
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -121,6 +142,10 @@ namespace BuzzGenerator1
         {
             //Disable all configuration checkboxes and buttons
             //Clear and Enable Folder textbox and button
+            DisableAll();
+            Enable(FolderTextBox, PicturesFolderButton);
+            TweetIntervalcomboBox.Enabled = true;
+            //Display();
 
         }
 
@@ -128,6 +153,10 @@ namespace BuzzGenerator1
         {
             //Disable all configuration checkboxes and buttons
             //Clear and Enable File textbox and button
+            DisableAll();
+            Enable(FileTextBox, SelectFileButton);
+            TweetIntervalcomboBox.Enabled = true;
+            //Display();
         }
 
         private void DisableAll()
@@ -140,7 +169,9 @@ namespace BuzzGenerator1
             SelectFileButton.Enabled = false;
             FolderTextBox.Text = "";
             FolderTextBox.ReadOnly = true;
-            PicturesFolderButton.Enabled = false;       
+            PicturesFolderButton.Enabled = false;
+            TweetIntervalcomboBox.Enabled = false;
+
         }
 
         private void InitializeCounters()

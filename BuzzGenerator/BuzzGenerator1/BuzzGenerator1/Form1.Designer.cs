@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.ManualTextRadioButton = new System.Windows.Forms.RadioButton();
             this.BuzzConfigGroupBox = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.TweetIntervalcomboBox = new System.Windows.Forms.ComboBox();
             this.NoneRadioButton = new System.Windows.Forms.RadioButton();
             this.AutoImageRadioButton = new System.Windows.Forms.RadioButton();
             this.AutoTextRadioButton = new System.Windows.Forms.RadioButton();
@@ -56,6 +56,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.BuzzDashboardGroupBox = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.TweetIntervalLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.BuzzConfigGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.BuzzDashboardGroupBox.SuspendLayout();
@@ -74,27 +76,29 @@
             // 
             // BuzzConfigGroupBox
             // 
-            this.BuzzConfigGroupBox.Controls.Add(this.comboBox1);
+            this.BuzzConfigGroupBox.Controls.Add(this.label2);
+            this.BuzzConfigGroupBox.Controls.Add(this.TweetIntervalLabel);
+            this.BuzzConfigGroupBox.Controls.Add(this.TweetIntervalcomboBox);
             this.BuzzConfigGroupBox.Controls.Add(this.NoneRadioButton);
             this.BuzzConfigGroupBox.Controls.Add(this.AutoImageRadioButton);
             this.BuzzConfigGroupBox.Controls.Add(this.AutoTextRadioButton);
             this.BuzzConfigGroupBox.Controls.Add(this.ManualTextRadioButton);
             this.BuzzConfigGroupBox.Location = new System.Drawing.Point(12, 12);
             this.BuzzConfigGroupBox.Name = "BuzzConfigGroupBox";
-            this.BuzzConfigGroupBox.Size = new System.Drawing.Size(548, 161);
+            this.BuzzConfigGroupBox.Size = new System.Drawing.Size(558, 161);
             this.BuzzConfigGroupBox.TabIndex = 1;
             this.BuzzConfigGroupBox.TabStop = false;
             this.BuzzConfigGroupBox.Text = "Tweet Configuration";
             this.BuzzConfigGroupBox.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // comboBox1
+            // TweetIntervalcomboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(416, 129);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 15;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.TweetIntervalcomboBox.FormattingEnabled = true;
+            this.TweetIntervalcomboBox.Location = new System.Drawing.Point(335, 125);
+            this.TweetIntervalcomboBox.Name = "TweetIntervalcomboBox";
+            this.TweetIntervalcomboBox.Size = new System.Drawing.Size(57, 21);
+            this.TweetIntervalcomboBox.TabIndex = 15;
+            this.TweetIntervalcomboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // NoneRadioButton
             // 
@@ -133,16 +137,16 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea5.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart1.Legends.Add(legend5);
             this.chart1.Location = new System.Drawing.Point(237, 27);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.chart1.Series.Add(series5);
             this.chart1.Size = new System.Drawing.Size(300, 243);
             this.chart1.TabIndex = 2;
             this.chart1.Text = "chart1";
@@ -160,7 +164,7 @@
             // 
             this.TweetButton.Location = new System.Drawing.Point(474, 34);
             this.TweetButton.Name = "TweetButton";
-            this.TweetButton.Size = new System.Drawing.Size(75, 23);
+            this.TweetButton.Size = new System.Drawing.Size(80, 23);
             this.TweetButton.TabIndex = 4;
             this.TweetButton.Text = "Tweet";
             this.TweetButton.UseVisualStyleBackColor = true;
@@ -192,7 +196,7 @@
             // 
             this.SelectFileButton.Location = new System.Drawing.Point(474, 67);
             this.SelectFileButton.Name = "SelectFileButton";
-            this.SelectFileButton.Size = new System.Drawing.Size(75, 23);
+            this.SelectFileButton.Size = new System.Drawing.Size(80, 23);
             this.SelectFileButton.TabIndex = 7;
             this.SelectFileButton.Text = "Select File";
             this.SelectFileButton.UseVisualStyleBackColor = true;
@@ -201,9 +205,10 @@
             // 
             this.PicturesFolderButton.Location = new System.Drawing.Point(474, 105);
             this.PicturesFolderButton.Name = "PicturesFolderButton";
-            this.PicturesFolderButton.Size = new System.Drawing.Size(75, 23);
+            this.PicturesFolderButton.Size = new System.Drawing.Size(80, 23);
             this.PicturesFolderButton.TabIndex = 8;
-            this.PicturesFolderButton.Text = "Pictures Folder";
+            this.PicturesFolderButton.Text = "Select Folder";
+            this.PicturesFolderButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.PicturesFolderButton.UseVisualStyleBackColor = true;
             // 
             // RetweetTextBox
@@ -269,7 +274,7 @@
             this.BuzzDashboardGroupBox.Controls.Add(this.RetweetTextBox);
             this.BuzzDashboardGroupBox.Location = new System.Drawing.Point(12, 183);
             this.BuzzDashboardGroupBox.Name = "BuzzDashboardGroupBox";
-            this.BuzzDashboardGroupBox.Size = new System.Drawing.Size(548, 285);
+            this.BuzzDashboardGroupBox.Size = new System.Drawing.Size(558, 285);
             this.BuzzDashboardGroupBox.TabIndex = 16;
             this.BuzzDashboardGroupBox.TabStop = false;
             this.BuzzDashboardGroupBox.Text = "Insights Dashboard";
@@ -287,11 +292,33 @@
             this.label1.Text = "Since Last Tweet";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // TweetIntervalLabel
+            // 
+            this.TweetIntervalLabel.AutoSize = true;
+            this.TweetIntervalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TweetIntervalLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TweetIntervalLabel.Location = new System.Drawing.Point(197, 126);
+            this.TweetIntervalLabel.Name = "TweetIntervalLabel";
+            this.TweetIntervalLabel.Size = new System.Drawing.Size(132, 15);
+            this.TweetIntervalLabel.TabIndex = 16;
+            this.TweetIntervalLabel.Text = "Auto Tweet Interval:";
+            this.TweetIntervalLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(398, 126);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 15);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "minutes";
+            // 
             // BuzzGeneratorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(572, 471);
+            this.ClientSize = new System.Drawing.Size(580, 471);
             this.Controls.Add(this.FollowRequestLabel);
             this.Controls.Add(this.FollowRequestTextBox);
             this.Controls.Add(this.MentionsLabel);
@@ -342,9 +369,11 @@
         private System.Windows.Forms.Label FollowRequestLabel;
         private System.Windows.Forms.TextBox FollowRequestTextBox;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox TweetIntervalcomboBox;
         private System.Windows.Forms.GroupBox BuzzDashboardGroupBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label TweetIntervalLabel;
+        private System.Windows.Forms.Label label2;
     }
 }
 
