@@ -30,21 +30,21 @@ namespace ConsoleApplication2
             //IEnumerable<Tweet> mytimneline = TT.GetHomeTimeline(null, 2);
             //Console.ReadKey();
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
             var service = new TwitterService("tedRo766zL7mr7TKZkOugA", "WREOp5SZ71EtLCt3T4RboUv1IrkUpPkCpcBxkAGk8");
             //var service = new TwitterService("bWDpCLO2mIByqMYoaRh2Cg", "X4veUKVWhB09wipWhVpaVhXvLDHqzIjnOLOGXxiY8Y");
             service.AuthenticateWith("21985278-dud1wSertHCQYTUK5ta5AA0ciqWB31ZsT8Dt8DJg", "yPDp2TTOOhQj6XDxX7P5TxmNtHZcQ6sJumth8DVzRk");
             //service.AuthenticateWith("25963011-QuJkeaEcXqB92bhMxoIJHKBLFHP1rPZysu6K68IqZ", "pY0TXRW8aIUSDfSUpJAzsQ2s2Oay2A0HBdiaK1Z8");
             //var tweets = service.ListTweetsOnHomeTimeline(new ListTweetsOnHomeTimelineOptions());
-=======
+//=======
             //var service = new TwitterService("tedRo766zL7mr7TKZkOugA", "WREOp5SZ71EtLCt3T4RboUv1IrkUpPkCpcBxkAGk8");
-            var service = new TwitterService("bWDpCLO2mIByqMYoaRh2Cg", "X4veUKVWhB09wipWhVpaVhXvLDHqzIjnOLOGXxiY8Y");
+            //var service = new TwitterService("bWDpCLO2mIByqMYoaRh2Cg", "X4veUKVWhB09wipWhVpaVhXvLDHqzIjnOLOGXxiY8Y");
             //service.AuthenticateWith("21985278-dud1wSertHCQYTUK5ta5AA0ciqWB31ZsT8Dt8DJg", "yPDp2TTOOhQj6XDxX7P5TxmNtHZcQ6sJumth8DVzRk");
-            service.AuthenticateWith("25963011-QuJkeaEcXqB92bhMxoIJHKBLFHP1rPZysu6K68IqZ", "pY0TXRW8aIUSDfSUpJAzsQ2s2Oay2A0HBdiaK1Z8");
+           // service.AuthenticateWith("25963011-QuJkeaEcXqB92bhMxoIJHKBLFHP1rPZysu6K68IqZ", "pY0TXRW8aIUSDfSUpJAzsQ2s2Oay2A0HBdiaK1Z8");
              //var tweets = service.ListTweetsOnHomeTimeline(new ListTweetsOnHomeTimelineOptions());
             var tweets = service.ListTweetsOnUserTimeline(new ListTweetsOnUserTimelineOptions());
 
->>>>>>> added modifications for tweet insights
+//>>>>>>> added modifications for tweet insights
             //var tweets = service.ListRetweetsOfMyTweets(new ListRetweetsOfMyTweetsOptions());
             //var tweets = service.ListFavoriteTweets(new ListFavoriteTweetsOptions());
             //var tweets = service.ListTweetsMentioningMe(new ListTweetsMentioningMeOptions());
@@ -54,19 +54,19 @@ namespace ConsoleApplication2
 
             //service.SendTweet(MyTweetOptions);
             
-            var myFriendLists = service.GetIncomingFriendRequests(new GetIncomingFriendRequestsOptions());
+            //var myFriendLists = service.GetIncomingFriendRequests(new GetIncomingFriendRequestsOptions());
 
-            foreach (var FriendLists in myFriendLists)
-            {
-                var MyFriendOptions = new GetUserProfileForOptions();
-                MyFriendOptions.UserId = FriendLists;
+            //foreach (var FriendLists in myFriendLists)
+            //{
+            //    var MyFriendOptions = new GetUserProfileForOptions();
+            //    MyFriendOptions.UserId = FriendLists;
 
-                var MyFriend = service.GetUserProfileFor(MyFriendOptions);
+            //    var MyFriend = service.GetUserProfileFor(MyFriendOptions);
 
 
-<<<<<<< HEAD
-                Console.WriteLine("{0} says", FriendLists.ToString());
-=======
+//<<<<<<< HEAD
+                //Console.WriteLine("{0} says", FriendLists.ToString());
+//=======
             //Console.WriteLine(" count: {0}") tweets.Count.ToString());
             int count = 0;
             foreach (var tweet in tweets)
@@ -75,7 +75,7 @@ namespace ConsoleApplication2
                 count = count + 1;
 
                 Console.WriteLine("{0} says '{1}' count: {2}", tweet.Id, tweet.Text,count.ToString());
->>>>>>> added modifications for tweet insights
+//>>>>>>> added modifications for tweet insights
                 Console.ReadKey();
                 
 
