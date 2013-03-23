@@ -105,6 +105,7 @@
             this.Schedulebutton.TabIndex = 18;
             this.Schedulebutton.Text = "Schedule";
             this.Schedulebutton.UseVisualStyleBackColor = true;
+            this.Schedulebutton.Click += new System.EventHandler(this.Schedulebutton_Click);
             // 
             // label2
             // 
@@ -122,7 +123,7 @@
             this.TweetIntervalLabel.AutoSize = true;
             this.TweetIntervalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TweetIntervalLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TweetIntervalLabel.Location = new System.Drawing.Point(263, 166);
+            this.TweetIntervalLabel.Location = new System.Drawing.Point(307, 168);
             this.TweetIntervalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TweetIntervalLabel.Name = "TweetIntervalLabel";
             this.TweetIntervalLabel.Size = new System.Drawing.Size(132, 15);
@@ -259,7 +260,6 @@
             this.PicturesFolderButton.Size = new System.Drawing.Size(107, 28);
             this.PicturesFolderButton.TabIndex = 8;
             this.PicturesFolderButton.Text = "Select Folder";
-            this.PicturesFolderButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.PicturesFolderButton.UseVisualStyleBackColor = true;
             this.PicturesFolderButton.Click += new System.EventHandler(this.PicturesFolderButton_Click);
             // 
@@ -345,7 +345,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(40, 53);
+            this.label1.Location = new System.Drawing.Point(21, 57);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(169, 24);

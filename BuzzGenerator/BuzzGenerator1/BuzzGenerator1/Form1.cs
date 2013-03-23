@@ -34,7 +34,7 @@ namespace BuzzGenerator1
         private void Form1_Load(object sender, EventArgs e)
         {
             DisableAll();
-            InitializeCounters();
+            //InitializeCounters();
             InitializeTweetIntervalCombobox();
             Display();
         }
@@ -203,6 +203,11 @@ namespace BuzzGenerator1
             {
                 FolderTextBox.Text = folderBrowserDialog1.SelectedPath;
             }
+
+        }
+
+        private void Schedulebutton_Click(object sender, EventArgs e)
+        {
 
         }
     }
