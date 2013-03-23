@@ -59,6 +59,11 @@ namespace BuzzGenerator1
         {
             int followers=0;
             var followerLists = service.GetIncomingFriendRequests(new GetIncomingFriendRequestsOptions());
+
+            if (followerLists == null)
+                return followers;
+            
+            
             foreach (var follower in followerLists)
             {
                 followers = followers + 1;
@@ -90,15 +95,18 @@ namespace BuzzGenerator1
             ListRetweetsOfMyTweetsOptions myRetweetOptions = new ListRetweetsOfMyTweetsOptions();
             myRetweetOptions.SinceId = lastTweetID;
             myRetweetOptions.Count = 100;
+           // MessageBox.Show(myRetweetOptions.SinceId.ToString());
             var tweets = service.ListRetweetsOfMyTweets(myRetweetOptions);
             int retweets = 0;
 
             if (tweets == null)
+               MessageBox.Show("null retweet object");
                 return retweets;
 
             foreach (var tweet in tweets)
             {
                 retweets = retweets + 1;
+                //MessageBox.Show(retweets.ToString());
                 initialTotalRetweets = initialTotalRetweets + tweet.RetweetCount;
             }
             return retweets;
@@ -106,14 +114,14 @@ namespace BuzzGenerator1
 
         private long GetLastTweetID()
         {
-            ListTweetsOnUserTimelineOptions userTimelineOptions = new ListTweetsOnUserTimelineOptions();
-            userTimelineOptions.Count = 1;
-            var tweets = service.ListTweetsOnUserTimeline(userTimelineOptions); 
+            //ListTweetsOnUserTimelineOptions userTimelineOptions = new ListTweetsOnUserTimelineOptions();
+            //userTimelineOptions.Count = 1;
+            //var tweets = service.ListTweetsOnUserTimeline(userTimelineOptions); 
             long lastTweetId=0;
-            foreach (var tweet in tweets)
-            {
-                lastTweetId = tweet.Id;
-            }
+            //foreach (var tweet in tweets)
+            //{
+            //    lastTweetId = tweet.Id;
+            //}
             return lastTweetId;
         }
 

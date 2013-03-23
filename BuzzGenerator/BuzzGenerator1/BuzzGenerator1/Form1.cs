@@ -34,7 +34,7 @@ namespace BuzzGenerator1
         private void Form1_Load(object sender, EventArgs e)
         {
             DisableAll();
-            //InitializeCounters();
+            InitializeCounters();
             InitializeTweetIntervalCombobox();
             Display();
         }
@@ -130,6 +130,7 @@ namespace BuzzGenerator1
             {
                // label1.Text = DateTime.Now.ToLongTimeString();
                 mytwitter.UpdateCounters();
+               // mytwitter.GetRetweetsSinceLastTweet();
                 Display();
             }
 
