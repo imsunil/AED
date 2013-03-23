@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.ManualTextRadioButton = new System.Windows.Forms.RadioButton();
             this.BuzzConfigGroupBox = new System.Windows.Forms.GroupBox();
+            this.Schedulebutton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.TweetIntervalLabel = new System.Windows.Forms.Label();
             this.TweetIntervalcomboBox = new System.Windows.Forms.ComboBox();
@@ -58,7 +59,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.BuzzDashboardGroupBox = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Schedulebutton = new System.Windows.Forms.Button();
             this.BuzzConfigGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.BuzzDashboardGroupBox.SuspendLayout();
@@ -67,9 +67,10 @@
             // ManualTextRadioButton
             // 
             this.ManualTextRadioButton.AutoSize = true;
-            this.ManualTextRadioButton.Location = new System.Drawing.Point(17, 23);
+            this.ManualTextRadioButton.Location = new System.Drawing.Point(23, 28);
+            this.ManualTextRadioButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ManualTextRadioButton.Name = "ManualTextRadioButton";
-            this.ManualTextRadioButton.Size = new System.Drawing.Size(90, 17);
+            this.ManualTextRadioButton.Size = new System.Drawing.Size(106, 20);
             this.ManualTextRadioButton.TabIndex = 0;
             this.ManualTextRadioButton.Text = "Text - Manual";
             this.ManualTextRadioButton.UseVisualStyleBackColor = true;
@@ -85,19 +86,32 @@
             this.BuzzConfigGroupBox.Controls.Add(this.AutoImageRadioButton);
             this.BuzzConfigGroupBox.Controls.Add(this.AutoTextRadioButton);
             this.BuzzConfigGroupBox.Controls.Add(this.ManualTextRadioButton);
-            this.BuzzConfigGroupBox.Location = new System.Drawing.Point(12, 12);
+            this.BuzzConfigGroupBox.Location = new System.Drawing.Point(16, 15);
+            this.BuzzConfigGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BuzzConfigGroupBox.Name = "BuzzConfigGroupBox";
-            this.BuzzConfigGroupBox.Size = new System.Drawing.Size(558, 161);
+            this.BuzzConfigGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BuzzConfigGroupBox.Size = new System.Drawing.Size(744, 198);
             this.BuzzConfigGroupBox.TabIndex = 1;
             this.BuzzConfigGroupBox.TabStop = false;
             this.BuzzConfigGroupBox.Text = "Tweet Configuration";
             this.BuzzConfigGroupBox.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // Schedulebutton
+            // 
+            this.Schedulebutton.Location = new System.Drawing.Point(616, 161);
+            this.Schedulebutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Schedulebutton.Name = "Schedulebutton";
+            this.Schedulebutton.Size = new System.Drawing.Size(107, 28);
+            this.Schedulebutton.TabIndex = 18;
+            this.Schedulebutton.Text = "Schedule";
+            this.Schedulebutton.UseVisualStyleBackColor = true;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(398, 135);
+            this.label2.Location = new System.Drawing.Point(531, 166);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 15);
             this.label2.TabIndex = 17;
@@ -108,7 +122,8 @@
             this.TweetIntervalLabel.AutoSize = true;
             this.TweetIntervalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TweetIntervalLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TweetIntervalLabel.Location = new System.Drawing.Point(197, 135);
+            this.TweetIntervalLabel.Location = new System.Drawing.Point(263, 166);
+            this.TweetIntervalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TweetIntervalLabel.Name = "TweetIntervalLabel";
             this.TweetIntervalLabel.Size = new System.Drawing.Size(132, 15);
             this.TweetIntervalLabel.TabIndex = 16;
@@ -118,9 +133,10 @@
             // TweetIntervalcomboBox
             // 
             this.TweetIntervalcomboBox.FormattingEnabled = true;
-            this.TweetIntervalcomboBox.Location = new System.Drawing.Point(335, 134);
+            this.TweetIntervalcomboBox.Location = new System.Drawing.Point(447, 165);
+            this.TweetIntervalcomboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TweetIntervalcomboBox.Name = "TweetIntervalcomboBox";
-            this.TweetIntervalcomboBox.Size = new System.Drawing.Size(57, 21);
+            this.TweetIntervalcomboBox.Size = new System.Drawing.Size(75, 24);
             this.TweetIntervalcomboBox.TabIndex = 15;
             this.TweetIntervalcomboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -128,9 +144,10 @@
             // 
             this.NoneRadioButton.AutoSize = true;
             this.NoneRadioButton.Checked = true;
-            this.NoneRadioButton.Location = new System.Drawing.Point(17, 129);
+            this.NoneRadioButton.Location = new System.Drawing.Point(23, 159);
+            this.NoneRadioButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NoneRadioButton.Name = "NoneRadioButton";
-            this.NoneRadioButton.Size = new System.Drawing.Size(136, 17);
+            this.NoneRadioButton.Size = new System.Drawing.Size(167, 20);
             this.NoneRadioButton.TabIndex = 3;
             this.NoneRadioButton.TabStop = true;
             this.NoneRadioButton.Text = "None - Dashboard Only";
@@ -140,9 +157,10 @@
             // AutoImageRadioButton
             // 
             this.AutoImageRadioButton.AutoSize = true;
-            this.AutoImageRadioButton.Location = new System.Drawing.Point(17, 96);
+            this.AutoImageRadioButton.Location = new System.Drawing.Point(23, 118);
+            this.AutoImageRadioButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AutoImageRadioButton.Name = "AutoImageRadioButton";
-            this.AutoImageRadioButton.Size = new System.Drawing.Size(123, 17);
+            this.AutoImageRadioButton.Size = new System.Drawing.Size(149, 20);
             this.AutoImageRadioButton.TabIndex = 2;
             this.AutoImageRadioButton.Text = "Pictures - Automated";
             this.AutoImageRadioButton.UseVisualStyleBackColor = true;
@@ -151,9 +169,10 @@
             // AutoTextRadioButton
             // 
             this.AutoTextRadioButton.AutoSize = true;
-            this.AutoTextRadioButton.Location = new System.Drawing.Point(17, 58);
+            this.AutoTextRadioButton.Location = new System.Drawing.Point(23, 71);
+            this.AutoTextRadioButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AutoTextRadioButton.Name = "AutoTextRadioButton";
-            this.AutoTextRadioButton.Size = new System.Drawing.Size(106, 17);
+            this.AutoTextRadioButton.Size = new System.Drawing.Size(127, 20);
             this.AutoTextRadioButton.TabIndex = 1;
             this.AutoTextRadioButton.Text = "Text - Automated";
             this.AutoTextRadioButton.UseVisualStyleBackColor = true;
@@ -161,34 +180,37 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(237, 27);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(316, 33);
+            this.chart1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(300, 243);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(400, 299);
             this.chart1.TabIndex = 2;
             this.chart1.Text = "chart1";
             // 
             // TweetTextBox
             // 
-            this.TweetTextBox.Location = new System.Drawing.Point(175, 36);
+            this.TweetTextBox.Location = new System.Drawing.Point(233, 44);
+            this.TweetTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TweetTextBox.MaxLength = 140;
             this.TweetTextBox.Name = "TweetTextBox";
-            this.TweetTextBox.Size = new System.Drawing.Size(293, 20);
+            this.TweetTextBox.Size = new System.Drawing.Size(389, 22);
             this.TweetTextBox.TabIndex = 3;
             this.TweetTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // TweetButton
             // 
-            this.TweetButton.Location = new System.Drawing.Point(474, 34);
+            this.TweetButton.Location = new System.Drawing.Point(632, 42);
+            this.TweetButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TweetButton.Name = "TweetButton";
-            this.TweetButton.Size = new System.Drawing.Size(80, 23);
+            this.TweetButton.Size = new System.Drawing.Size(107, 28);
             this.TweetButton.TabIndex = 4;
             this.TweetButton.Text = "Tweet";
             this.TweetButton.UseVisualStyleBackColor = true;
@@ -205,32 +227,36 @@
             // 
             // FileTextBox
             // 
-            this.FileTextBox.Location = new System.Drawing.Point(175, 70);
+            this.FileTextBox.Location = new System.Drawing.Point(233, 86);
+            this.FileTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FileTextBox.Name = "FileTextBox";
-            this.FileTextBox.Size = new System.Drawing.Size(293, 20);
+            this.FileTextBox.Size = new System.Drawing.Size(389, 22);
             this.FileTextBox.TabIndex = 5;
             // 
             // FolderTextBox
             // 
-            this.FolderTextBox.Location = new System.Drawing.Point(175, 108);
+            this.FolderTextBox.Location = new System.Drawing.Point(233, 133);
+            this.FolderTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FolderTextBox.Name = "FolderTextBox";
-            this.FolderTextBox.Size = new System.Drawing.Size(293, 20);
+            this.FolderTextBox.Size = new System.Drawing.Size(389, 22);
             this.FolderTextBox.TabIndex = 6;
             // 
             // SelectFileButton
             // 
-            this.SelectFileButton.Location = new System.Drawing.Point(474, 67);
+            this.SelectFileButton.Location = new System.Drawing.Point(632, 82);
+            this.SelectFileButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SelectFileButton.Name = "SelectFileButton";
-            this.SelectFileButton.Size = new System.Drawing.Size(80, 23);
+            this.SelectFileButton.Size = new System.Drawing.Size(107, 28);
             this.SelectFileButton.TabIndex = 7;
             this.SelectFileButton.Text = "Select File";
             this.SelectFileButton.UseVisualStyleBackColor = true;
             // 
             // PicturesFolderButton
             // 
-            this.PicturesFolderButton.Location = new System.Drawing.Point(474, 106);
+            this.PicturesFolderButton.Location = new System.Drawing.Point(632, 130);
+            this.PicturesFolderButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PicturesFolderButton.Name = "PicturesFolderButton";
-            this.PicturesFolderButton.Size = new System.Drawing.Size(80, 23);
+            this.PicturesFolderButton.Size = new System.Drawing.Size(107, 28);
             this.PicturesFolderButton.TabIndex = 8;
             this.PicturesFolderButton.Text = "Select Folder";
             this.PicturesFolderButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -240,52 +266,58 @@
             // RetweetTextBox
             // 
             this.RetweetTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RetweetTextBox.Location = new System.Drawing.Point(98, 85);
+            this.RetweetTextBox.Location = new System.Drawing.Point(131, 105);
+            this.RetweetTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RetweetTextBox.Name = "RetweetTextBox";
-            this.RetweetTextBox.Size = new System.Drawing.Size(101, 44);
+            this.RetweetTextBox.Size = new System.Drawing.Size(133, 44);
             this.RetweetTextBox.TabIndex = 9;
             // 
             // RetweetsLabel
             // 
             this.RetweetsLabel.AutoSize = true;
-            this.RetweetsLabel.Location = new System.Drawing.Point(54, 268);
+            this.RetweetsLabel.Location = new System.Drawing.Point(72, 330);
+            this.RetweetsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RetweetsLabel.Name = "RetweetsLabel";
-            this.RetweetsLabel.Size = new System.Drawing.Size(52, 13);
+            this.RetweetsLabel.Size = new System.Drawing.Size(64, 16);
             this.RetweetsLabel.TabIndex = 10;
             this.RetweetsLabel.Text = "Retweets";
             // 
             // MentionsLabel
             // 
             this.MentionsLabel.AutoSize = true;
-            this.MentionsLabel.Location = new System.Drawing.Point(56, 338);
+            this.MentionsLabel.Location = new System.Drawing.Point(75, 416);
+            this.MentionsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MentionsLabel.Name = "MentionsLabel";
-            this.MentionsLabel.Size = new System.Drawing.Size(50, 13);
+            this.MentionsLabel.Size = new System.Drawing.Size(62, 16);
             this.MentionsLabel.TabIndex = 12;
             this.MentionsLabel.Text = "Mentions";
             // 
             // MentionsTextBox
             // 
             this.MentionsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MentionsTextBox.Location = new System.Drawing.Point(110, 338);
+            this.MentionsTextBox.Location = new System.Drawing.Point(147, 416);
+            this.MentionsTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MentionsTextBox.Name = "MentionsTextBox";
-            this.MentionsTextBox.Size = new System.Drawing.Size(101, 44);
+            this.MentionsTextBox.Size = new System.Drawing.Size(133, 44);
             this.MentionsTextBox.TabIndex = 11;
             // 
             // FollowRequestLabel
             // 
             this.FollowRequestLabel.AutoSize = true;
-            this.FollowRequestLabel.Location = new System.Drawing.Point(26, 409);
+            this.FollowRequestLabel.Location = new System.Drawing.Point(35, 503);
+            this.FollowRequestLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.FollowRequestLabel.Name = "FollowRequestLabel";
-            this.FollowRequestLabel.Size = new System.Drawing.Size(80, 13);
+            this.FollowRequestLabel.Size = new System.Drawing.Size(101, 16);
             this.FollowRequestLabel.TabIndex = 14;
             this.FollowRequestLabel.Text = "Follow Request";
             // 
             // FollowRequestTextBox
             // 
             this.FollowRequestTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FollowRequestTextBox.Location = new System.Drawing.Point(110, 409);
+            this.FollowRequestTextBox.Location = new System.Drawing.Point(147, 503);
+            this.FollowRequestTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FollowRequestTextBox.Name = "FollowRequestTextBox";
-            this.FollowRequestTextBox.Size = new System.Drawing.Size(101, 44);
+            this.FollowRequestTextBox.Size = new System.Drawing.Size(133, 44);
             this.FollowRequestTextBox.TabIndex = 13;
             // 
             // timer1
@@ -298,9 +330,11 @@
             this.BuzzDashboardGroupBox.Controls.Add(this.label1);
             this.BuzzDashboardGroupBox.Controls.Add(this.chart1);
             this.BuzzDashboardGroupBox.Controls.Add(this.RetweetTextBox);
-            this.BuzzDashboardGroupBox.Location = new System.Drawing.Point(12, 183);
+            this.BuzzDashboardGroupBox.Location = new System.Drawing.Point(16, 225);
+            this.BuzzDashboardGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BuzzDashboardGroupBox.Name = "BuzzDashboardGroupBox";
-            this.BuzzDashboardGroupBox.Size = new System.Drawing.Size(558, 285);
+            this.BuzzDashboardGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BuzzDashboardGroupBox.Size = new System.Drawing.Size(744, 351);
             this.BuzzDashboardGroupBox.TabIndex = 16;
             this.BuzzDashboardGroupBox.TabStop = false;
             this.BuzzDashboardGroupBox.Text = "Insights Dashboard";
@@ -311,27 +345,19 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(30, 43);
+            this.label1.Location = new System.Drawing.Point(40, 53);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(169, 24);
             this.label1.TabIndex = 10;
             this.label1.Text = "Since Last Tweet";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Schedulebutton
-            // 
-            this.Schedulebutton.Location = new System.Drawing.Point(462, 131);
-            this.Schedulebutton.Name = "Schedulebutton";
-            this.Schedulebutton.Size = new System.Drawing.Size(80, 23);
-            this.Schedulebutton.TabIndex = 18;
-            this.Schedulebutton.Text = "Schedule";
-            this.Schedulebutton.UseVisualStyleBackColor = true;
-            // 
             // BuzzGeneratorForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 471);
+            this.ClientSize = new System.Drawing.Size(773, 580);
             this.Controls.Add(this.FollowRequestLabel);
             this.Controls.Add(this.FollowRequestTextBox);
             this.Controls.Add(this.MentionsLabel);
@@ -345,6 +371,9 @@
             this.Controls.Add(this.TweetTextBox);
             this.Controls.Add(this.BuzzConfigGroupBox);
             this.Controls.Add(this.BuzzDashboardGroupBox);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "BuzzGeneratorForm";
             this.Text = "TweetInsights";

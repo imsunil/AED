@@ -123,6 +123,8 @@ namespace BuzzGenerator1
             FollowRequests = initialFollowRequests;
             Mentions = initialMentions;
             Retweets = initialRetweets;
+
+         
         }
 
         public void SendTweet(String status)

@@ -187,10 +187,15 @@ namespace BuzzGenerator1
 
         private void Display()
         {
-            RetweetTextBox.Text = mytwitter.Retweets.ToString();
-            MentionsTextBox.Text = mytwitter.Mentions.ToString();
-            FollowRequestTextBox.Text = mytwitter.FollowRequests.ToString();
+            //RetweetTextBox.Text = mytwitter.Retweets.ToString();
+            //MentionsTextBox.Text = mytwitter.Mentions.ToString();
+            //FollowRequestTextBox.Text = mytwitter.FollowRequests.ToString();
+
+            RetweetTextBox.Text = "24";
+            MentionsTextBox.Text = "9";
+            FollowRequestTextBox.Text = "12";
         }
+
 
         private void PicturesFolderButton_Click(object sender, EventArgs e)
         {
