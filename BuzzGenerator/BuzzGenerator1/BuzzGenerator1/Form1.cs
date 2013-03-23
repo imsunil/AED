@@ -187,13 +187,13 @@ namespace BuzzGenerator1
 
         private void Display()
         {
-            //RetweetTextBox.Text = mytwitter.Retweets.ToString();
-            //MentionsTextBox.Text = mytwitter.Mentions.ToString();
-            //FollowRequestTextBox.Text = mytwitter.FollowRequests.ToString();
+            RetweetTextBox.Text = mytwitter.Retweets.ToString();
+            MentionsTextBox.Text = mytwitter.Mentions.ToString();
+            FollowRequestTextBox.Text = mytwitter.FollowRequests.ToString();
 
-            RetweetTextBox.Text = "24";
-            MentionsTextBox.Text = "9";
-            FollowRequestTextBox.Text = "12";
+            //RetweetTextBox.Text = "0";
+            //MentionsTextBox.Text = "0";
+            //FollowRequestTextBox.Text = "0";
         }
 
 
