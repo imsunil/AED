@@ -12,7 +12,7 @@ namespace BuzzGenerator1
 {
     public partial class BuzzGeneratorForm : Form
     {
-        private MyTwitter mytwitter = new MyTwitter();
+        private MyTwitter mytwitter = new MyTwitter(MyTwitter.consumerKey2, MyTwitter.consumerSecret2, MyTwitter.accessToken2, MyTwitter.accessTokenSecret2);
         Timer DashboardRefreshTimer = new Timer();
 
         
@@ -108,7 +108,7 @@ namespace BuzzGenerator1
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
 
@@ -188,6 +188,10 @@ namespace BuzzGenerator1
 
         private void Display()
         {
+            if (mytwitter.Retweets == null)
+            {
+                MessageBox.Show("null retweet object");
+            }
             RetweetTextBox.Text = mytwitter.Retweets.ToString();
             MentionsTextBox.Text = mytwitter.Mentions.ToString();
             FollowRequestTextBox.Text = mytwitter.FollowRequests.ToString();
@@ -209,7 +213,7 @@ namespace BuzzGenerator1
 
         private void Schedulebutton_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Not Implemented");
         }
     }
 }
